@@ -39,3 +39,14 @@ def test_invalid_answer_mode_is_rejected(monkeypatch: pytest.MonkeyPatch) -> Non
 def test_project_root_contains_pyproject() -> None:
     assert (project_root() / "pyproject.toml").is_file()
     assert isinstance(project_root(), Path)
+
+def test_env_example_file_loads_cleanly() -> None:
+    settings = Settings(_env_file=project_root() / ".env.example")
+    assert settings.bedrock_embedding_dimensions == 1024
+    assert settings.answer_mode == "offline"
+
+
+def test_invalid_embedding_dimensions_are_rejected(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("BEDROCK_EMBEDDING_DIMENSIONS", "999")
+    with pytest.raises(ValidationError, match="256, 512 or 1024"):
+        Settings(_env_file=None)    

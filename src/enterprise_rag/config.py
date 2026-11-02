@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     # Bedrock (Phases 2 and 3)
     aws_region: str = "ap-south-1"
     bedrock_embedding_model_id: str = "amazon.titan-embed-text-v2:0"
-    bedrock_embedding_dimensions: Literal[256, 512, 1024] = 1024
+    bedrock_embedding_dimensions: int = 1024
     bedrock_chat_model_id: str = "global.anthropic.claude-haiku-4-5-20251001-v1:0"
 
     # Retrieval and answers (Phases 2 and 3)
@@ -47,6 +47,13 @@ class Settings(BaseSettings):
     @classmethod
     def _normalise_log_level(cls, value: object) -> object:
         return value.upper() if isinstance(value, str) else value
+
+    @field_validator("bedrock_embedding_dimensions")
+    @classmethod
+    def _check_embedding_dimensions(cls, value: int) -> int:
+        if value not in {256, 512, 1024}:
+            raise ValueError("bedrock_embedding_dimensions must be 256, 512 or 1024")
+        return value
 
     @model_validator(mode="after")
     def _check_chunk_settings(self) -> Self:
@@ -65,7 +72,6 @@ def clear_settings_cache() -> None:
     """Forget the cached settings (used by tests)."""
     get_settings.cache_clear()
 
-
 def project_root() -> Path:
     """Return the repository root (config.py lives in src/enterprise_rag)."""
-    return Path(__file__).resolve().parents[2]
+    return Path(__file__).resolve().parents[2]        
