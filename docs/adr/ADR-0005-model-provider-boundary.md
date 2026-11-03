@@ -7,3 +7,4 @@
   Mumbai (ap-south-1) use the global inference profile ID.
 - Consequences: Tests use fakes. Global profiles may process requests in other regions, so only
   synthetic or public documents are used.
+-Local embeddings (TEI, bge-small-en-v1.5) are used first; Bedrock embeddings are a later upgrade behind the same Embedder protocol.

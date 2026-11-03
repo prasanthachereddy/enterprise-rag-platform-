@@ -48,6 +48,7 @@ class Settings(BaseSettings):
     local_embedding_dimensions: int = Field(default=384, ge=8, le=4096)
     retrieval_candidates: int = Field(default=20, ge=1, le=200)
     rrf_k: int = Field(default=60, ge=1, le=1000)
+    min_query_coverage: float = Field(default=0.5, ge=0.0, le=1.0)
     
     @field_validator("app_log_level", mode="before")
     @classmethod
