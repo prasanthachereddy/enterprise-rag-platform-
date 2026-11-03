@@ -26,6 +26,11 @@ dev = [
   "mypy>=1.10,<2.0",
   "types-requests>=2.31",
 ]
+cloud = [
+  "aws-cdk-lib>=2.200,<3.0",
+  "constructs>=10.3,<11.0",
+  "boto3>=1.34,<2.0",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -49,3 +54,7 @@ strict = true
 [[tool.mypy.overrides]]
   module = ["opensearchpy", "opensearchpy.*"]
   ignore_missing_imports = true
+[[tool.mypy.overrides]]
+module = ["boto3", "botocore", "botocore.*"]
+ignore_missing_imports = true
+  
