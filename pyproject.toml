@@ -13,6 +13,8 @@ dependencies = [
   "pydantic-settings>=2.2,<3.0",
   "python-dotenv>=1.0,<2.0",
   "beautifulsoup4>=4.12,<5.0",
+  "opensearch-py>=2.6,<3.0",
+  "requests>=2.31,<3.0",
 ]
 
 [project.optional-dependencies]
@@ -21,6 +23,7 @@ dev = [
   "pytest-cov>=5.0,<8.0",
   "ruff>=0.5,<1.0",
   "mypy>=1.10,<2.0",
+  "types-requests>=2.31",
 ]
 
 [tool.setuptools.packages.find]
@@ -42,3 +45,6 @@ select = ["E", "F", "I", "UP", "B"]
 python_version = "3.11"
 mypy_path = "src"
 strict = true
+[[tool.mypy.overrides]]
+  module = ["opensearchpy", "opensearchpy.*"]
+  ignore_missing_imports = true

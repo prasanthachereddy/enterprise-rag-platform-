@@ -42,7 +42,13 @@ class Settings(BaseSettings):
     # Retrieval and answers (Phases 2 and 3)
     retrieval_top_k: int = Field(default=5, ge=1, le=50)
     answer_mode: Literal["offline", "bedrock"] = "offline"
-
+    # Local embeddings through Text Embeddings Inference in Docker (Phase 2)
+    local_embedding_url: str = "http://localhost:8080"
+    local_embedding_model: str = "BAAI/bge-small-en-v1.5"
+    local_embedding_dimensions: int = Field(default=384, ge=8, le=4096)
+    retrieval_candidates: int = Field(default=20, ge=1, le=200)
+    rrf_k: int = Field(default=60, ge=1, le=1000)
+    
     @field_validator("app_log_level", mode="before")
     @classmethod
     def _normalise_log_level(cls, value: object) -> object:

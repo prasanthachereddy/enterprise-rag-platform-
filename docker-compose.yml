@@ -1,0 +1,26 @@
+services:
+  opensearch:
+    image: opensearchproject/opensearch:2.15.0
+    container_name: erp-opensearch
+    environment:
+      - discovery.type=single-node
+      - DISABLE_SECURITY_PLUGIN=true
+      - DISABLE_INSTALL_DEMO_CONFIG=true
+      - OPENSEARCH_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    volumes:
+      - opensearch-data:/usr/share/opensearch/data
+
+  embeddings:
+    image: ghcr.io/huggingface/text-embeddings-inference:cpu-1.6
+    container_name: erp-embeddings
+    command: ["--model-id", "BAAI/bge-small-en-v1.5"]
+    ports:
+      - "8080:80"
+    volumes:
+      - embedding-cache:/data
+
+volumes:
+  opensearch-data:
+  embedding-cache:
