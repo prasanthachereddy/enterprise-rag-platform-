@@ -2,6 +2,7 @@
 
 import streamlit as st
 
+from enterprise_rag.answers.bedrock import AnswerGenerationError
 from enterprise_rag.answers.service import ask
 from enterprise_rag.config import Settings, get_settings
 from enterprise_rag.retrieval.embeddings import LocalEmbedder
@@ -33,8 +34,10 @@ if st.button("Ask") and question.strip():
     try:
         with st.spinner("Searching..."):
             answer = ask(question, settings, client, embedder, mode)
-    except (ValueError, NotImplementedError) as exc:
+    except ValueError as exc:
         st.warning(str(exc))
+    except AnswerGenerationError as exc:
+        st.error(f"The model step failed: {exc}. Try again, or set ANSWER_MODE=offline.")
     except Exception as exc:
         st.error(f"Search failed ({type(exc).__name__}). Are both Docker containers running?")
     else:
