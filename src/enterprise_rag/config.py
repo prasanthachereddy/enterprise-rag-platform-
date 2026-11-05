@@ -37,7 +37,7 @@ class Settings(BaseSettings):
     aws_region: str = "ap-south-1"
     bedrock_embedding_model_id: str = "amazon.titan-embed-text-v2:0"
     bedrock_embedding_dimensions: int = 1024
-    bedrock_chat_model_id: str = "in.anthropic.claude-haiku-4-5-20251001-v1:0"
+    bedrock_chat_model_id: str = "apac.amazon.nova-micro-v1:0"
     answer_max_tokens: int = Field(default=400, ge=50, le=2000)
 
     # Retrieval and answers (Phases 2 and 3)

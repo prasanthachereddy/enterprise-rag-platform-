@@ -1,0 +1,7 @@
+IT Support Policy
+
+The IT service desk is open from 8:00 to 20:00 on working days. Urgent faults can be reported by phone at any time.
+
+Tickets are ranked by priority. Priority 1 tickets, such as a full network outage, receive a response within 30 minutes. Priority 3 tickets, such as a password reset request, receive a response within two working days.
+
+Lost or stolen laptops must be reported to the service desk immediately so the device can be locked remotely.

@@ -1,0 +1,7 @@
+Data Retention Policy
+
+Employee records are kept for seven years after an employee leaves. Financial records are kept for eight years.
+
+Email is retained for three years. Backups of production systems are kept for 90 days and then deleted.
+
+Records under legal hold must not be deleted until the legal team lifts the hold.

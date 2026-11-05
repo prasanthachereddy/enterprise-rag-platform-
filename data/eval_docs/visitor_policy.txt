@@ -1,0 +1,5 @@
+Visitor Policy
+
+All visitors must register at reception and show a photo ID. Visitors receive a badge that must be worn at all times.
+
+Visitors must be accompanied by an employee in all areas except the lobby. Visitor badges are returned at reception when the visit ends.

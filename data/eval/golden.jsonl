@@ -1,0 +1,30 @@
+{"id": "q01", "question": "How many days of paid annual leave do full-time employees get?", "answerable": true, "source": "leave_policy.html", "heading": "Annual Leave", "must_contain": ["24 days"]}
+{"id": "q02", "question": "Until when can carried-forward leave be used?", "answerable": true, "source": "leave_policy.html", "heading": "Annual Leave", "must_contain": ["31 March"]}
+{"id": "q03", "question": "When do I need a medical certificate for sick leave?", "answerable": true, "source": "leave_policy.html", "heading": "Sick Leave", "must_contain": ["three consecutive days"]}
+{"id": "q04", "question": "What is the minimum password length?", "answerable": true, "source": "security_policy.md", "heading": "Passwords", "must_contain": ["14 characters"]}
+{"id": "q05", "question": "How soon must a security incident be reported?", "answerable": true, "source": "security_policy.md", "heading": "Incident Reporting", "must_contain": ["one hour"]}
+{"id": "q06", "question": "What is the daily meal reimbursement limit when travelling?", "answerable": true, "source": "expense_policy.txt", "heading": "", "must_contain": ["2,000 rupees"]}
+{"id": "q07", "question": "When must expense claims be submitted?", "answerable": true, "source": "expense_policy.txt", "heading": "", "must_contain": ["30 days"]}
+{"id": "q08", "question": "How many days a week can I work from home?", "answerable": true, "source": "remote_work_policy.md", "heading": "Eligibility", "must_contain": ["three days"]}
+{"id": "q09", "question": "What hours must remote employees be available?", "answerable": true, "source": "remote_work_policy.md", "heading": "Working Hours", "must_contain": ["10:00"]}
+{"id": "q10", "question": "What is the hotel limit per night in metro cities?", "answerable": true, "source": "travel_booking_policy.html", "heading": "Hotels", "must_contain": ["6,000 rupees"]}
+{"id": "q11", "question": "How early must flights be booked?", "answerable": true, "source": "travel_booking_policy.html", "heading": "Booking", "must_contain": ["seven days"]}
+{"id": "q12", "question": "Up to what amount can a manager approve a purchase?", "answerable": true, "source": "procurement_policy.md", "heading": "Purchase Approval", "must_contain": ["25,000 rupees"]}
+{"id": "q13", "question": "How many vendor quotations are needed for large purchases?", "answerable": true, "source": "procurement_policy.md", "heading": "Vendor Selection", "must_contain": ["three vendors"]}
+{"id": "q14", "question": "How long are employee records kept after someone leaves?", "answerable": true, "source": "data_retention_policy.txt", "heading": "", "must_contain": ["seven years"]}
+{"id": "q15", "question": "How often are performance reviews held?", "answerable": true, "source": "performance_review_policy.html", "heading": "Review Cycle", "must_contain": ["twice a year"]}
+{"id": "q16", "question": "Which rating makes an employee eligible for a bonus?", "answerable": true, "source": "performance_review_policy.html", "heading": "Ratings", "must_contain": ["4 or 5"]}
+{"id": "q17", "question": "How much is the yearly learning budget?", "answerable": true, "source": "training_policy.html", "heading": "Training Budget", "must_contain": ["30,000 rupees"]}
+{"id": "q18", "question": "When must an employee repay a certification fee?", "answerable": true, "source": "training_policy.html", "heading": "Certification Reimbursement", "must_contain": ["12 months"]}
+{"id": "q19", "question": "How often are fire drills held?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "Fire Safety", "must_contain": ["six months"]}
+{"id": "q20", "question": "Where is the first aid room?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "First Aid", "must_contain": ["ground floor"]}
+{"id": "q21", "question": "What must visitors show at reception?", "answerable": true, "source": "visitor_policy.txt", "heading": "", "must_contain": ["photo ID"]}
+{"id": "q22", "question": "How many floating holidays do employees get?", "answerable": true, "source": "holiday_calendar.md", "heading": "Floating Holidays", "must_contain": ["two floating holidays"]}
+{"id": "q23", "question": "How long is the buddy period for new joiners?", "answerable": true, "source": "onboarding_guide.md", "heading": "Buddy Programme", "must_contain": ["90 days"]}
+{"id": "q24", "question": "How quickly are priority 1 IT tickets answered?", "answerable": true, "source": "it_support_policy.txt", "heading": "", "must_contain": ["30 minutes"]}
+{"id": "u01", "question": "What is the policy on parental leave for new fathers?", "answerable": false}
+{"id": "u02", "question": "What is the dress code for client meetings?", "answerable": false}
+{"id": "u03", "question": "How much is the relocation allowance for transfers?", "answerable": false}
+{"id": "u04", "question": "Which cloud provider does the company use?", "answerable": false}
+{"id": "u05", "question": "What is the stock option vesting schedule?", "answerable": false}
+{"id": "u06", "question": "Can employees bring pets to the office?", "answerable": false}

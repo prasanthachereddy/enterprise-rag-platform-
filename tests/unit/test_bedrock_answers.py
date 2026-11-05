@@ -164,8 +164,7 @@ def test_offline_mode_never_touches_the_model() -> None:
     ask("how many days of annual leave", settings, FakeClient(), FakeEmbedder(), llm=llm)
     assert llm.calls == []
 
-
-def test_defaults_use_the_india_profile_and_a_small_output_cap() -> None:
+def test_defaults_use_the_verified_nova_profile_and_a_small_output_cap() -> None:
     settings = Settings(_env_file=None)
-    assert settings.bedrock_chat_model_id.startswith("in.anthropic.claude-haiku-4-5")
-    assert settings.answer_max_tokens == 400
+    assert settings.bedrock_chat_model_id == "apac.amazon.nova-micro-v1:0"
+    assert settings.answer_max_tokens == 400    
