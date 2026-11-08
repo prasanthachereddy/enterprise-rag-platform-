@@ -1,0 +1,20 @@
+{"id": "n01", "question": "How long are financial records kept?", "answerable": true, "source": "data_retention_policy.txt", "heading": "", "must_contain": ["eight years"]}
+{"id": "n02", "question": "Where can I find the first aid room?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "First Aid", "must_contain": ["ground floor"]}
+{"id": "n03", "question": "How fast does IT respond to a full network outage?", "answerable": true, "source": "it_support_policy.txt", "heading": "", "must_contain": ["30 minutes"]}
+{"id": "n04", "question": "What do I need to get promoted?", "answerable": true, "source": "performance_review_policy.html", "heading": "Promotion", "must_contain": ["18 months"]}
+{"id": "n05", "question": "How many days a week can I work from home?", "answerable": true, "source": "remote_work_policy.md", "heading": "Eligibility", "must_contain": ["three days"]}
+{"id": "n06", "question": "How much money do I get each year for learning?", "answerable": true, "source": "training_policy.html", "heading": "Training Budget", "must_contain": ["30,000"]}
+{"id": "n07", "question": "How long does the company take to pay a vendor's invoice?", "answerable": true, "source": "procurement_policy.md", "heading": "Invoices", "must_contain": ["45 days"]}
+{"id": "n08", "question": "Can a visitor walk around the office alone?", "answerable": true, "source": "visitor_policy.txt", "heading": "", "must_contain": ["accompanied"]}
+{"id": "n09", "question": "What is the nightly hotel limit in a big city?", "answerable": true, "source": "travel_booking_policy.html", "heading": "Hotels", "must_contain": ["6,000"]}
+{"id": "n10", "question": "How long does a new joiner have a buddy?", "answerable": true, "source": "onboarding_guide.md", "heading": "Buddy Programme", "must_contain": ["90 days"]}
+{"id": "n11", "question": "A supplier offered me an expensive gift. What should I do?", "answerable": true, "source": "code_of_conduct.html", "heading": "Gifts", "must_contain": ["declined"]}
+{"id": "n12", "question": "How early do I have to ask for a floating holiday?", "answerable": true, "source": "holiday_calendar.md", "heading": "Floating Holidays", "must_contain": ["three days"]}
+{"id": "n13", "question": "During which hours must remote staff be reachable?", "answerable": true, "source": "remote_work_policy.md", "heading": "Working Hours", "must_contain": ["10:00"]}
+{"id": "n14", "question": "What if I leave soon after the company paid for my exam?", "answerable": true, "source": "training_policy.html", "heading": "Certification Reimbursement", "must_contain": ["repay"]}
+{"id": "u01", "question": "Can I take unpaid leave for a long trip?", "answerable": false}
+{"id": "u02", "question": "Does the company pay for my home internet bill?", "answerable": false}
+{"id": "u03", "question": "How often must I change my password?", "answerable": false}
+{"id": "u04", "question": "What is the notice period when someone resigns?", "answerable": false}
+{"id": "u05", "question": "What is the dress code for client meetings?", "answerable": false}
+{"id": "u06", "question": "Who is the CEO of the company?", "answerable": false}
