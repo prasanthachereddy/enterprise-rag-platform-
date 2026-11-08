@@ -1,4 +1,4 @@
-"""Bedrock answers: Claude Haiku answers only from passages that passed the evidence check."""
+"""Bedrock answers: the model answers only from passages that passed the evidence check."""
 
 import html
 import logging

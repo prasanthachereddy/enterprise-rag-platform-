@@ -14,7 +14,7 @@ from enterprise_rag.answers.service import ask
 from enterprise_rag.config import Settings
 from enterprise_rag.retrieval.models import SearchResult
 
-MODEL = "in.anthropic.claude-haiku-4-5-20251001-v1:0"
+MODEL = "apac.amazon.nova-micro-v1:0"
 
 ANNUAL = (
     "Full-time employees receive 24 days of paid annual leave per calendar year. "

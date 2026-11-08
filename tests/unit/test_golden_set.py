@@ -37,3 +37,18 @@ def test_golden_set_has_the_expected_shape(tmp_path: Path) -> None:
     documents = {source for source, _ in corpus_sections(tmp_path)}
     assert len(documents) == 15
     assert len({q.question for q in questions}) == 30
+
+
+def test_heldout_set_is_valid_and_does_not_reuse_golden_questions(tmp_path: Path) -> None:
+    root = project_root() / "data" / "eval"
+    golden = load_golden(root / "golden.jsonl")
+    heldout = load_golden(root / "heldout.jsonl")
+    sections = corpus_sections(tmp_path)
+    assert len(heldout) >= 20
+    assert not {q.id for q in golden} & {q.id for q in heldout}
+    assert not {q.question.lower() for q in golden} & {q.question.lower() for q in heldout}
+    for question in heldout:
+        if question.answerable:
+            text = sections[(question.source, question.heading)].lower()
+            for fact in question.must_contain:
+                assert fact.lower() in text, f"{question.id}: '{fact}' not in its section"

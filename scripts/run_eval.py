@@ -26,12 +26,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Evaluate retrieval and answers")
     parser.add_argument("--index", default="enterprise-policy-eval")
     parser.add_argument("--answers", choices=["none", "offline", "bedrock", "both"], default="both")
+    parser.add_argument("--golden", default="data/eval/golden.jsonl")
     parser.add_argument("--out", default="docs/EVALUATION.md")
     args = parser.parse_args()
 
     root = project_root()
     settings = get_settings().model_copy(update={"opensearch_index": args.index})
-    questions = load_golden(root / "data" / "eval" / "golden.jsonl")
+    questions = load_golden(root / args.golden)
     client = create_client(settings.opensearch_url)
     embedder = LocalEmbedder(
         settings.local_embedding_url,
@@ -87,7 +88,8 @@ def main() -> None:
     stamp = datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC")
     out = root / args.out
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(render_report(retrieval, answers, info, stamp, documents), encoding="utf-8")
+    report = render_report(retrieval, answers, info, stamp, documents, args.golden)
+    out.write_text(report, encoding="utf-8")
     print(f"Wrote {out}")
 
 

@@ -1,0 +1,20 @@
+{"id": "h01", "question": "Where can I raise a harassment complaint?", "answerable": true, "source": "code_of_conduct.html", "heading": "Respect at Work", "must_contain": ["anonymous ethics line"]}
+{"id": "h02", "question": "Do I have to tell anyone if I own shares in a competitor?", "answerable": true, "source": "code_of_conduct.html", "heading": "Conflicts of Interest", "must_contain": ["in writing"]}
+{"id": "h03", "question": "What is the maximum value of a gift I can accept from a supplier?", "answerable": true, "source": "code_of_conduct.html", "heading": "Gifts", "must_contain": ["1,500 rupees"]}
+{"id": "h04", "question": "What happens on a new joiner's first Monday?", "answerable": true, "source": "onboarding_guide.md", "heading": "First Week", "must_contain": ["orientation"]}
+{"id": "h05", "question": "Who has to approve access to production systems?", "answerable": true, "source": "onboarding_guide.md", "heading": "Accounts and Access", "must_contain": ["access request"]}
+{"id": "h06", "question": "What happens if I cancel a booking late?", "answerable": true, "source": "travel_booking_policy.html", "heading": "Cancellations", "must_contain": ["cancellation fees"]}
+{"id": "h07", "question": "How long does the company take to pay vendor invoices?", "answerable": true, "source": "procurement_policy.md", "heading": "Invoices", "must_contain": ["45 days"]}
+{"id": "h08", "question": "How long must I be in a grade before promotion?", "answerable": true, "source": "performance_review_policy.html", "heading": "Promotion", "must_contain": ["18 months"]}
+{"id": "h09", "question": "How many public holidays does the company observe?", "answerable": true, "source": "holiday_calendar.md", "heading": "Public Holidays", "must_contain": ["12 public holidays"]}
+{"id": "h10", "question": "Is the office open between Christmas and New Year?", "answerable": true, "source": "holiday_calendar.md", "heading": "Office Closure", "must_contain": ["25 December"]}
+{"id": "h11", "question": "How long do I have to return my laptop after leaving?", "answerable": true, "source": "remote_work_policy.md", "heading": "Equipment", "must_contain": ["seven days"]}
+{"id": "h12", "question": "How long are production backups kept?", "answerable": true, "source": "data_retention_policy.txt", "heading": "", "must_contain": ["90 days"]}
+{"id": "h13", "question": "What must I do if I find an unsafe machine?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "Reporting Hazards", "must_contain": ["same day"]}
+{"id": "h14", "question": "Can I take a lift during a fire alarm?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "Fire Safety", "must_contain": ["stairs"]}
+{"id": "h15", "question": "What should I do if my laptop is stolen?", "answerable": true, "source": "it_support_policy.txt", "heading": "", "must_contain": ["service desk"]}
+{"id": "h16", "question": "Does unused training budget roll over to the next year?", "answerable": true, "source": "training_policy.html", "heading": "Training Budget", "must_contain": ["does not carry over"]}
+{"id": "v01", "question": "How many days of maternity leave are available?", "answerable": false}
+{"id": "v02", "question": "What is the process for reporting a payroll error?", "answerable": false}
+{"id": "v03", "question": "Does the company reimburse home internet costs?", "answerable": false}
+{"id": "v04", "question": "What is the notice period for resignation?", "answerable": false}

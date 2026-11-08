@@ -13,12 +13,13 @@ def render_report(
     settings_info: dict[str, str],
     generated_at: str,
     corpus_documents: int,
+    golden_file: str = "data/eval/golden.jsonl",
 ) -> str:
     lines = [
         "# Evaluation results",
         "",
         f"Generated: {generated_at}. Corpus: {corpus_documents} synthetic documents. "
-        "Questions and labels are frozen in `data/eval/golden.jsonl` (ADR-0009).",
+        f"Questions and labels are frozen in `{golden_file}` (ADR-0009).",
         "",
         "## Settings",
         "",
