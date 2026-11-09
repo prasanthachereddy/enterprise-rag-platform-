@@ -2,7 +2,7 @@
 {"id": "n02", "question": "Where can I find the first aid room?", "answerable": true, "source": "health_and_safety_policy.md", "heading": "First Aid", "must_contain": ["ground floor"]}
 {"id": "n03", "question": "How fast does IT respond to a full network outage?", "answerable": true, "source": "it_support_policy.txt", "heading": "", "must_contain": ["30 minutes"]}
 {"id": "n04", "question": "What do I need to get promoted?", "answerable": true, "source": "performance_review_policy.html", "heading": "Promotion", "must_contain": ["18 months"]}
-{"id": "n05", "question": "How many days a week can I work from home?", "answerable": true, "source": "remote_work_policy.md", "heading": "Eligibility", "must_contain": ["three days"]}
+{"id": "n05", "question": "How long must someone have worked here before they can work remotely?", "answerable": true, "source": "remote_work_policy.md", "heading": "Eligibility", "must_contain": ["six months"]}
 {"id": "n06", "question": "How much money do I get each year for learning?", "answerable": true, "source": "training_policy.html", "heading": "Training Budget", "must_contain": ["30,000"]}
 {"id": "n07", "question": "How long does the company take to pay a vendor's invoice?", "answerable": true, "source": "procurement_policy.md", "heading": "Invoices", "must_contain": ["45 days"]}
 {"id": "n08", "question": "Can a visitor walk around the office alone?", "answerable": true, "source": "visitor_policy.txt", "heading": "", "must_contain": ["accompanied"]}
@@ -16,5 +16,5 @@
 {"id": "u02", "question": "Does the company pay for my home internet bill?", "answerable": false}
 {"id": "u03", "question": "How often must I change my password?", "answerable": false}
 {"id": "u04", "question": "What is the notice period when someone resigns?", "answerable": false}
-{"id": "u05", "question": "What is the dress code for client meetings?", "answerable": false}
+{"id": "u05", "question": "Is smoking allowed inside the office?", "answerable": false}
 {"id": "u06", "question": "Who is the CEO of the company?", "answerable": false}
